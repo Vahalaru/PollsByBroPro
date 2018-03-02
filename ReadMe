@@ -1,0 +1,8 @@
+This is an Application I am making for TCT to use. Using this is a learning experiance, practice, and to help out the place I work.
+It is a simple application that lets you create questionares or polls and you can invite users to join your poll and respond. 
+I am utilizing firebase firestore for my backend to save time and learn more about it.
+
+I used Kotlin to start learning kotlin, then fell in love. Now I am dedicated to gaining a full understanding of how it works.
+
+
+Future updates will let you access from a browser and interact with the same data.
