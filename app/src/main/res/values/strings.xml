@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PollsByBroPro</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="loginTrackerString"></string>
+
+    <string name="adMob_App_id">ca-app-pub-8539992502891423~2458779016</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8539992502891423/2653741206</string>
+</resources>

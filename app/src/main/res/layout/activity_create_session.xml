@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:fbutton="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:text="Below, please enter in poll question and available responses"/>
+
+            <View android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/titTitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Title"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/questionNumAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:textSize="24dp"
+                android:text="1"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/questionForPolls"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etQuestionsForPolls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Question Here">
+                    </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/responseBottomRow"
+            android:layout_above="@id/buttonLayoutHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/AnswerCView"
+                android:visibility="invisible"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/addC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:textSize="24dp"
+                    android:text="D."/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/addCTextLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/addCText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Add text Here">
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AnswerDView"
+                android:visibility="invisible"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/addD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:textSize="24dp"
+                    android:text="C."/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/addDTextLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/addDText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Add text Here">
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/responseTopRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/responseBottomRow"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:id="@+id/AnswerAView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/addA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="A."
+                    android:textSize="24dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/addATextLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/addAText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Add text Here">
+                    </android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AnswerBView"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/addB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="B."
+                    android:textSize="24dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/addBTextLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/addBText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Add text Here"></android.support.design.widget.TextInputEditText>
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAddResponse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/ic_fab_add_black"
+            android:layout_above="@id/responseTopRow"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/buttonLayoutHolder"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+        <info.hoang8f.widget.FButton
+
+            android:id="@+id/btnFinishAddingPoll"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="6dp"
+            app:fButtonColor="@color/fbutton_color_amethyst"
+            fbutton:shadowColor="@color/fbutton_color_wisteria"
+            fbutton:cornerRadius="8dp"
+            fbutton:shadowEnabled="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Finish"/>
+            <info.hoang8f.widget.FButton
+
+                android:id="@+id/btnAddAnotherQuestion"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                fbutton:fButtonColor="@color/fbutton_color_amethyst"
+                fbutton:shadowColor="@color/fbutton_color_wisteria"
+                fbutton:cornerRadius="8dp"
+                fbutton:shadowEnabled="true"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="Next Question"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

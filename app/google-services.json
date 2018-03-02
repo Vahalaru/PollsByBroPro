@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "793577691435",
+    "firebase_url": "https://pollsbybropro-54587.firebaseio.com",
+    "project_id": "pollsbybropro-54587",
+    "storage_bucket": "pollsbybropro-54587.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793577691435:android:77381c7ce1ac5167",
+        "android_client_info": {
+          "package_name": "net.tctelco.vahalaru.pollsbybropro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793577691435-du5gav6d4utm326ph3upiil4569g7402.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.tctelco.vahalaru.pollsbybropro",
+            "certificate_hash": "8b440ecb75fff51b51d0e47f0ef8025e46c0a0f6"
+          }
+        },
+        {
+          "client_id": "793577691435-b3p9o8jevsksi0jis21qotc36d6q5j95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy0MUCPb1xSDrrHzeFnfilXeZZEsfS9yU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793577691435-b3p9o8jevsksi0jis21qotc36d6q5j95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
